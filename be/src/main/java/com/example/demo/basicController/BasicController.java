@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class BasicController {
 
-    @GetMapping("/")
+    @GetMapping("/api")
     @ResponseBody
     public String defaultReq() {
         return "Hello World";
