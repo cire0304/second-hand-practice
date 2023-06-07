@@ -72,5 +72,4 @@ jobs:
           script: |
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/jmdb-be
             sudo docker stop jmdb-be
-            sudo docker run -d --rm --name jmdb-be -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/jmdb
-            
+            sudo docker run -d --rm --name jmdb-be -p 80:80 ${{ secrets.DOCKERHUB_USERNAME }}/jmdb-be
