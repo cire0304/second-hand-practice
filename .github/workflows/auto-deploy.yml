@@ -63,6 +63,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/jmdb-be
 
+          
       - name: Pull and restart Docker Container
         uses: appleboy/ssh-action@master
         with:
