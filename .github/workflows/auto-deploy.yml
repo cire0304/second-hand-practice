@@ -66,8 +66,8 @@ jobs:
       - name: Pull and restart Docker Container
         uses: appleboy/ssh-action@master
         with:
-          key: ${{ secrets.SSH_KEY }}
-          host: ${{ secrets.HOST }}
+          key: ${{ secrets.SSH_KEY_BE }}
+          host: ${{ secrets.HOST_BE }}
           username: ${{ secrets.USER }}
           script: |
             sudo docker pull ${{ secrets.DOCKERHUB_USERNAME }}/jmdb-be
